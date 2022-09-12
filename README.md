@@ -1,56 +1,42 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
+# vet_clinic_database
 
-# Project Name
-
-> Description the project.
-
-
-## Built With
-
-- Major languages
-- Frameworks
-- Technologies used
-
-## Live Demo (if available)
-
-[Live Demo Link](https://livedemo.com)
+> This is a databse creation project This project has PostgreSQL quesries for vet clinic table and schema.
 
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
+This repository includes files with plain SQL that can be used to recreate a database:
+
+- [schema.sql](./schema.sql) to create all tables.
+- [data.sql](./data.sql) to populate tables with sample data.
+- [queries.sql](./queries.sql) for examples of queries that can be run on a newly created database.
+
+## Built With
+- Github
+- PostgreSQL
+
+<hr>
+
+ To get a local copy up and running follow these simple example steps.
 
 
-To get a local copy up and running follow these simple example steps.
+- Clone this repository
 
-### Prerequisites
+```
+git clone https://github.com/shaqayq/sql-database.git
+```
 
-### Setup
+- cd into the project directory
+```terminal
+cd vet_clinic_database
+```
 
-### Install
+## Author
 
-### Usage
+👤 **Shaqayq**
 
-### Run tests
-
-### Deployment
-
-
-
-## Authors
-
-👤 **Author1**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@shaqayq](https://github.com/shaqayq)
+- LinkedIn: [Shaqayq Darwazi](https://www.linkedin.com/in/shaqayq-darwazi/)
 
 ## 🤝 Contributing
 
@@ -64,9 +50,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- Thanks to Microverse.
 
 ## 📝 License
 
