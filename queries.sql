@@ -1,4 +1,4 @@
-/*Select names end by mon*/
+/*Find all animals whose name ends in "mon".*/
 SELECT * from animals WHERE name like '%mon'
 
 /*List the name of all animals born between 2016 and 2019*/
@@ -20,5 +20,5 @@ SELECT * from animals where neutered = true
 SELECT * from animals where name != 'Gabumon'
 
 /*Find all animals with a weight between 10.4kg and 17.3kg (including the animals with the weights that equals precisely 10.4kg or 17.3kg)*/ 
-SELECT * from animals where weight_kg >= 10.4 AND weight_kg<=12.3
+SELECT * from animals where weight_kg >= 10.4 AND weight_kg<=17.3
 
