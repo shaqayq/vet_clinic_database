@@ -29,7 +29,7 @@ BEGIN;
 update animals set species='unspecified';
 ROLLBACK;
 
-/*Update the animals table by setting the species column to digimon and */
+/*Update the animals table by setting the species column to digimon and pokemon*/
 BEGIN;
 UPDATE animals set species='digimon' where name like '%mon';
 update animals set species='pokemon' where species IS NULL;
