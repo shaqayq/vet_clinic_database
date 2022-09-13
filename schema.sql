@@ -12,3 +12,8 @@ create TABLE animals (
 	neutered bool,
 	weight_kg DECIMAL
 )
+
+/***************Update AND Delete**************************/
+
+/*Add new column*/
+ALTER TABLE animals ADD species VARCHAR(100)
