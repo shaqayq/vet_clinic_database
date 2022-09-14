@@ -19,6 +19,21 @@ VALUES
 ('Blossom','1998-10-13',3,true,17),
 ('Ditto','2022-05-14',4,true,22);
 
+/************Multi Table*************/
+
+/************INSERT TO OWNER TABLE**************/
+INSERT INTO owner (full_name,age) VALUES 
+('Sam Smith',34),
+('Jennifer Orwell',19),
+('Bob',45),
+('Melody Pond',77),
+('Dean Winchester',14),
+('Jodie Whittaker',38);
+
+/************INSERT TO species TABLE**************/
+INSERT INTO species (name) VALUES
+('Pokemon'),
+('Digimon');
 
 /************UPDATE FORIEGNKEY species_id VALUES**************/
 UPDATE animals set species_id=2 where name like '%mon'

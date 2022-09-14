@@ -43,7 +43,7 @@ ALTER TABLE animals
 ADD species_id INT,
 ADD owner_id  INT;
 
-/************ADD CONSTRAINto TP ANIMALS TABLE**************/
+/************ADD CONSTRAINto TO ANIMALS TABLE**************/
 ALTER TABLE animals ADD CONSTRAINT species_id FOREIGN KEY (species_id)
 REFERENCES species(id)
 
