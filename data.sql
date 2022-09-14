@@ -7,6 +7,7 @@ Insert INTO animals VALUES
 
 
 /***************Update AND Delete**************************/
+
 /*Insert new records*/
 INSERT into animals(name,date_of_birth,escape_attempts,neutered,weight_kg)
 VALUES
@@ -17,3 +18,30 @@ VALUES
 ('Boarmon','2005-06-07',7,true,20.4),
 ('Blossom','1998-10-13',3,true,17),
 ('Ditto','2022-05-14',4,true,22);
+
+/************Multi Table*************/
+
+/************INSERT TO OWNER TABLE**************/
+INSERT INTO owner (full_name,age) VALUES 
+('Sam Smith',34),
+('Jennifer Orwell',19),
+('Bob',45),
+('Melody Pond',77),
+('Dean Winchester',14),
+('Jodie Whittaker',38);
+
+/************INSERT TO species TABLE**************/
+INSERT INTO species (name) VALUES
+('Pokemon'),
+('Digimon');
+
+/************UPDATE FORIEGNKEY species_id VALUES**************/
+UPDATE animals set species_id=2 where name like '%mon'
+UPDATE animals set species_id=1 where name !~~ '%mon'
+
+/************UPDATE FORIEGNKEY owner_id VALUES**************/
+UPDATE animals set owner_id=1 where name = 'Agumon'
+UPDATE animals set owner_id=2 where name = 'Gabumon' OR name='Pikachu'
+UPDATE animals set owner_id=3 where name = 'Devimon' OR name='Plantmon'
+UPDATE animals set owner_id=4 where name = 'Charmander' OR name='Squirtle' OR name='Blossom'
+UPDATE animals set owner_id=5 where name = 'Angemon' OR name='Boarmon'
