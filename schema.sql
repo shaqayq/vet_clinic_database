@@ -49,3 +49,33 @@ REFERENCES species(id)
 
 ALTER TABLE animals ADD CONSTRAINT owner_id FOREIGN KEY (owner_id)
 REFERENCES owners(id)
+
+
+
+/********************RELATIONS********************************/
+
+/*************CREATE VETS TABLE**************/
+create table vets (
+	id int PRIMARY key NOT NULL GENERATED ALWAYS AS IDENTITY ,
+	name VARCHAR(100),
+	age int,
+	date_of_graduation date
+)
+
+/*************CREATE specializations TABLE**************/
+create table specializations  (
+	specie_id int ,
+	vet_id int ,
+	CONSTRAINT specie_id FOREIGN KEY (specie_id) REFERENCES species(id),
+	CONSTRAINT vet_id FOREIGN KEY (vet_id) REFERENCES vets(id)
+	
+)
+
+/*************CREATE visits TABLE**************/
+create table visits (
+	animal_id int ,
+	vet_id int ,
+	CONSTRAINT animal_id FOREIGN KEY (animal_id) REFERENCES animals(id),
+	CONSTRAINT vet_id FOREIGN KEY (vet_id) REFERENCES vets(id)
+	
+)
